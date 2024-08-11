@@ -24,7 +24,7 @@ map_style: 'cartodbpositron'
 # Fill color
 # Type: Str
 # Default: 'Spectral'
-# Recommended alternatives: 'RdYlGn', 'RdYlBu', 'RdBu', 'Reds', 'Blues', 'Greens'
+# Recommended alternatives: 'RdYlBu', 'RdYlGn', 'RdBu', 'Reds', 'Blues', 'Greens'
 fill_color: 'Spectral'
 
 # Fill opacity
