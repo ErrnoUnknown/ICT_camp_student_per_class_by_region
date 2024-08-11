@@ -34,14 +34,14 @@ regions = data.columns[1:].tolist()
 # Init students_per_class_by_age
 students_per_class_by_age = {}
 
-for age in range(9, 20):
+for age in range(8, 20):
     students_per_class_by_age[str(age)] = [round(value, 2) for value in data.iloc[age - 9].tolist()[1:]]
 
 # Clear previous outputs
 remove_html_files_in_dir('map/')
 
 # Visualize
-for age in range(9, 20):
+for age in range(8, 20):
     # Skip age if not used
     if age not in AGES_TO_VISUALIZE:
         continue
