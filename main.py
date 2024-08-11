@@ -1,4 +1,6 @@
 # Import
+import os
+import shutil
 import json
 import pandas as pd
 import folium
@@ -12,6 +14,12 @@ with open('config/config.yml', encoding='utf-8') as file:
     MAP_STYLE = config['map_style']
     FILL_COLOR = config['fill_color']
     FILL_OPACITY = config['fill_opacity']
+
+# Define functions
+def remove_html_files_in_dir(dir_path):
+    for root, _, files in os.walk(dir_path):
+        for file in files:
+            if file.endswith(".html"): os.remove(os.path.join(root, file))
 
 # Load data
 data = pd.read_excel('data/avg_students_per_class_by_age.xlsx')
@@ -28,6 +36,9 @@ students_per_class_by_age = {}
 
 for age in range(9, 20):
     students_per_class_by_age[str(age)] = [round(value, 2) for value in data.iloc[age - 9].tolist()[1:]]
+
+# Clear previous outputs
+remove_html_files_in_dir('map/')
 
 # Visualize
 for age in range(9, 20):
