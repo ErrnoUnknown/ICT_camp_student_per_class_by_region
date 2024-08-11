@@ -1,0 +1,32 @@
+# Ages to visualize
+# Type: List
+# Default: [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+ages_to_visualize:
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+
+# Map style
+# Type: Str
+# Default: 'cartodbpositron'
+# Recommended alternatives: 'openstreetmap', 'cartodbdark_matter', 'cartodbpositrononlylabels'
+map_style: 'cartodbpositron'
+
+# Fill color
+# Type: Str
+# Default: 'Spectral'
+# Recommended alternatives: 'RdYlGn', 'RdYlBu', 'RdBu', 'Reds', 'Blues', 'Greens'
+fill_color: 'Spectral'
+
+# Fill opacity
+# Type: Float
+# Default: 0.75
+fill_opacity: 0.75
