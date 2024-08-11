@@ -27,4 +27,4 @@
 
 ## Config 기능
 * ```config/config.yml```을 활용하여 시각화 옵션을 손쉽게 변경할 수 있도록 구현하였습니다.
-* ```config/config.yml```의 자세한 설명은 ```config.md```를 참고해주세요.
+* ```config/config.yml```의 자세한 설명은 [이곳](docs/config_guide.md)를 참고해주세요.
